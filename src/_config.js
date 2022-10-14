@@ -1,6 +1,6 @@
 
 export const app ={
-  title: 'vue-project-to'
+  title: 'Vue-Project-To'
 
 }
 
