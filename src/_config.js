@@ -1,13 +1,6 @@
-export const process = {
-  dev: false,
-};
 
-export const site ={
-  home: process.dev ? 'http://localhost:8080/' : 'http://localhost:8080/about',
-
-}
 export const app ={
-  title: 'Template'
+  title: 'vue-project-to'
 
 }
 
