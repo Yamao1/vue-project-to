@@ -6,6 +6,8 @@ const routerHistory = createWebHashHistory();
 import HomePage from '../src/pages/home'
 import AboutPage from '../src/pages/about'
 import NotFound from '../src/pages/notFound'
+import itemAlias from '../src/pages/itemAlias'
+import CardStats from "@/components/UI/CardStats";
 
 const routers = createRouter({
   history: routerHistory,
@@ -21,7 +23,17 @@ const routers = createRouter({
       component: AboutPage
     },
     {
-      path: '/:CatchAll(.*)',
+      path: '/:itemAlias',
+      name: 'itemAlias',
+      component: itemAlias
+    },
+    {
+      path: '/cardstats',
+      name: 'cardstats',
+      component: CardStats
+    },
+    {
+      path: '/404',
       name: '404',
       component: NotFound
     },
@@ -30,7 +42,6 @@ const routers = createRouter({
 
 
 export default routers;
-
 
 
 // {
